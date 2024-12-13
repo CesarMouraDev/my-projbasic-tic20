@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Basic</title>
-    <link href="./output.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal de Saúde e Bem-Estar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="font-sans bg-gray-100 text-gray-900">
+
+    <!-- Cabeçalho -->
+    <header class="bg-green-500 text-white p-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <svg class="h-12 mr-2 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l2.293 2.293a1 1 0 010 1.414L10 15.414l-5.414-5.414a1 1 0 010-1.414L7.707 6.707a1 1 0 011.414 0l2.293 2.293 2.879-2.879z" clip-rule="evenodd"/>
+                </svg>                
+                <h1 class="text-2xl font-bold">Portal de Saúde e Bem-Estar</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:text-gray-200">Início</a></li>
+                    <li><a href="#conteudo" class="hover:text-gray-200">Conteúdo</a></li>
+                    <li><a href="#videos" class="hover:text-gray-200">Vídeos</a></li>
+                    <li><a href="#especialistas" class="hover:text-gray-200">Especialistas</a></li>
+                    <li><a href="#contato" class="hover:text-gray-200">Contato</a></li>
+                </ul>
+            </nav>
+            <form action="#" method="get" class="flex items-center">
+                <input type="text" placeholder="Pesquise aqui..." class="p-2 rounded-l-md text-gray-900" required>
+                <button type="submit" class="bg-orange-400 text-white p-2 rounded-r-md">Pesquisar</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main class="py-8 px-4">
+
+        <!-- Seção de Introdução -->
+        <section id="inicio" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-green-500 mb-4">Bem-vindo ao Portal de Saúde e Bem-Estar</h2>
+            <p class="text-center text-lg">Explore conteúdos educativos, vídeos e especialistas sobre saúde, alimentação e bem-estar.</p>
+        </section>
+
+        <!-- Seção de Conteúdo -->
+        <section id="conteudo" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-green-500 mb-8">Conteúdos Principais</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Benefícios da Alimentação Saudável</h3>
+                    <img src="alimentacao-saudavel.jpg" alt="Alimentação saudável" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700">Uma alimentação balanceada é essencial para a manutenção da saúde e prevenção de doenças.</p>
+                    <a href="#" class="text-green-500 mt-4 inline-block hover:underline">Leia mais</a>
+                </article>
+
+                <article class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Importância da Atividade Física</h3>
+                    <img src="atividade-fisica.jpg" alt="Atividade física" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700">A prática regular de atividades físicas traz benefícios para o corpo e a mente.</p>
+                    <a href="#" class="text-green-500 mt-4 inline-block hover:underline">Leia mais</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Vídeos -->
+        <section id="videos" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-green-500 mb-8">Vídeos Educativos</h2>
+            <div class="space-y-8">
+                <article class="bg-white p-6 rounded-lg shadow-lg">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-full h-64 rounded-lg" title="Vídeo de Saúde e Bem-Estar"></iframe>
+                    <p class="mt-4 text-gray-700">Assista ao nosso vídeo sobre como melhorar sua saúde mental e física.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Especialistas -->
+        <section id="especialistas" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-green-500 mb-8">Conheça nossos Especialistas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="especialista1.jpg" alt="Especialista em nutrição" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Dr. João Silva</h3>
+                    <p class="text-gray-700">Nutricionista especializado em alimentação saudável.</p>
+                    <a href="https://linkedin.com/in/joaosilva" class="text-green-500 mt-4 inline-block hover:underline">LinkedIn</a>
+                </article>
+
+                <article class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="especialista2.jpg" alt="Especialista em atividade física" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Dra. Maria Oliveira</h3>
+                    <p class="text-gray-700">Fisioterapeuta especializada em exercícios para a saúde.</p>
+                    <a href="https://linkedin.com/in/mariaoliveira" class="text-green-500 mt-4 inline-block hover:underline">LinkedIn</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="mb-12">
+            <h2 class="text-3xl font-semibold text-center text-green-500 mb-8">Entre em Contato</h2>
+            <form action="#" method="post" class="max-w-xl mx-auto">
+                <label for="nome" class="block text-lg mb-2">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" class="w-full p-3 border border-gray-300 rounded-lg mb-4" required>
+
+                <label for="email" class="block text-lg mb-2">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" class="w-full p-3 border border-gray-300 rounded-lg mb-4" required>
+
+                <label for="assunto" class="block text-lg mb-2">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" class="w-full p-3 border border-gray-300 rounded-lg mb-4" required>
+
+                <button type="submit" class="w-full bg-orange-400 text-white p-3 rounded-lg">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-green-500 text-white text-center p-6">
+        <p>&copy; 2024 Portal de Saúde e Bem-Estar | Todos os direitos reservados</p>
+    </footer>
+
 </body>
+
 </html>
