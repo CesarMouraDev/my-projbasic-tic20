@@ -8,13 +8,11 @@ module.exports = {
         secondary: "#5800FF", 
         accent: "#00D1FF", 
         background: "#1F1B33", 
-        text: "#FFFFFF",
+        text: "#FFFFFF",        
       },
-      boxShadow: {
-        neon: "0 0 10px #FF0054, 0 0 20px #5800FF", 
-      },
+     
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'], // Adicionando Poppins como a fonte padrão
+        sans: ['Poppins', 'sans-serif'], 
       },
     },
   },
